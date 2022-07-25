@@ -452,7 +452,7 @@ endfunction "}}}
 
 if dein#tap('telescope.nvim')
 	" General pickers
-	nnoremap <localleader>r <cmd>Telescope resume<CR>
+	nnoremap <localleader>r <cmd>Telescope resume initial_mode=normal<CR>
 	nnoremap <localleader>R <cmd>Telescope pickers<CR>
 	nnoremap <localleader>f <cmd>Telescope find_files<CR>
 	nnoremap <localleader>g <cmd>Telescope live_grep<CR>
@@ -496,14 +496,15 @@ if dein#tap('telescope.nvim')
 	xnoremap <localleader>da :Telescope lsp_range_code_actions<CR>
 endif
 
-if dein#tap('nvim-tree.lua')
-	nnoremap <LocalLeader>e <cmd>NvimTreeToggle<CR>
-	nnoremap <LocalLeader>a <cmd>NvimTreeFindFile<CR>
+if dein#tap('neo-tree.nvim')
+	nnoremap <LocalLeader>e <cmd>Neotree filesystem left toggle dir=./<CR>
+	nnoremap <LocalLeader>a <cmd>Neotree filesystem left reveal<CR>
 endif
 
 if dein#tap('kommentary')
 	nnoremap <Leader>v <Plug>kommentary_line_default
 	xnoremap <Leader>v <Plug>kommentary_visual_default<C-c>
+	xnoremap <Leader>V <Plug>kommentary_visual_increase<C-c>
 endif
 
 if dein#tap('symbols-outline.nvim')
@@ -696,7 +697,7 @@ if dein#tap('nvim-spectre')
 	nnoremap <Leader>so <cmd>lua require('spectre').open()<CR>
 	" Search current word
 	nnoremap <Leader>sw <cmd>lua require('spectre').open_visual({select_word=true})<CR>
-	xnoremap <silent><Leader>s :lua require('spectre').open_visual()<CR>
+	xnoremap <silent><Leader>s <Esc>:lua require('spectre').open_visual()<CR>
 	" Search in current file
 	nnoremap <silent><Leader>sp viw:lua require('spectre').open_file_search()<CR>
 endif
