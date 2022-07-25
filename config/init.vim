@@ -59,6 +59,9 @@ let g:loaded_netrwPlugin = 1
 let g:loaded_netrwSettings = 1
 let g:loaded_netrwFileHandlers = 1
 
+" copilot
+let g:copilot_no_tab_map = v:true
+
 " Set main configuration directory as parent directory
 let $VIM_PATH =
 	\ get(g:, 'etc_vim_path',

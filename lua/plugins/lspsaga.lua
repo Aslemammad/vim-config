@@ -22,12 +22,12 @@ require('lspsaga').init_lsp_saga({
 		open = 'o', -- {'o', '<CR>'},
 		vsplit = 'sg', -- {'s', 'sg'},
 		split = 'sv', -- {'i', 'sv'},
-		quit = { 'q', '<Esc>' },
+		quit = { '<Esc>' },
 		scroll_down = '<C-d>', -- {'<C-f>', '<C-d>'},
 		scroll_up = '<C-u>', -- {'<C-b>', '<C-u>'},
 	},
 	code_action_keys = {
-		quit = { 'q', '<Esc>' },
+		quit = { '<Esc>' },
 		exec = '<CR>',
 	},
 	rename_action_keys = {

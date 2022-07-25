@@ -14,6 +14,7 @@ set path+=**                 " Directories to search when using gf and friends
 set isfname-==               " Remove =, detects filename in var=/foo/bar
 set virtualedit=block        " Position cursor anywhere in visual block
 set synmaxcol=2500           " Don't syntax highlight long lines
+set relativenumber
 
 if has('vim_starting')
 	set encoding=utf-8
