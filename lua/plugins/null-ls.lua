@@ -36,8 +36,8 @@ require('null-ls').setup({
 			extra_filetypes = { 'yaml', 'yaml.ansible' },
 		}),
 
-		-- Javascript
-		builtins.diagnostics.eslint,
+		-- -- Javascript
+		-- builtins.diagnostics.eslint,
 
 		-- Go
 		builtins.formatting.gofmt.with({

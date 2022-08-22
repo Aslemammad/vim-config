@@ -1,5 +1,4 @@
 - repo: wakatime/vim-wakatime
-- repo: github/copilot.vim
 - repo: mfussenegger/nvim-dap
   # hook_post_source: lua require('plugins.dap')
   hook_add: |-

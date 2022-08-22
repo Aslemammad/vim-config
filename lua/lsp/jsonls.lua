@@ -14,10 +14,10 @@ local config = {
 					fileMatch = { '.csslintrc' },
 					url = 'http://json.schemastore.org/csslintrc.json'
 				},
-				{
-					fileMatch = { '.eslintrc.json', '.eslintrc' },
-					url = 'http://json.schemastore.org/eslintrc'
-				},
+				-- {
+				-- 	fileMatch = { '.eslintrc.json', '.eslintrc' },
+				-- 	url = 'http://json.schemastore.org/eslintrc'
+				-- },
 				{
 					fileMatch = { '.golangci.json' },
 					url = 'http://json.schemastore.org/golangci-lint.json'
