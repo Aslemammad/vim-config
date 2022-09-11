@@ -1,4 +1,5 @@
 - repo: wakatime/vim-wakatime
+- repo: github/copilot.vim
 - repo: mfussenegger/nvim-dap
   # hook_post_source: lua require('plugins.dap')
   hook_add: |-
@@ -7,3 +8,5 @@
 - repo: rcarriga/nvim-dap-ui
 - repo: theHamsta/nvim-dap-virtual-text
 - repo: nvim-telescope/telescope-dap.nvim
+- repo: simrat39/rust-tools.nvim
+  depends: [ nvim-dap, nvim-lspconfig ]

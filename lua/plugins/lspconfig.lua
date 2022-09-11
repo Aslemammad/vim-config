@@ -174,6 +174,11 @@ local function setup()
 	-- Setup language servers using nvim-lspconfig
 	local lspconfig = require('lspconfig')
 	for _, ls in pairs(lsp_installer.get_installed_servers()) do
+		if (ls.name == "rust_analyzer") then
+			require("rust-tools").setup()
+			return
+		end
+
 		local opts = make_config(ls.name)
 		lspconfig[ls.name].setup(opts)
 	end
