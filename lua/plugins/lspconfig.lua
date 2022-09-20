@@ -176,11 +176,10 @@ local function setup()
 	for _, ls in pairs(lsp_installer.get_installed_servers()) do
 		if (ls.name == "rust_analyzer") then
 			require("rust-tools").setup()
-			return
+		else
+			local opts = make_config(ls.name)
+			lspconfig[ls.name].setup(opts)
 		end
-
-		local opts = make_config(ls.name)
-		lspconfig[ls.name].setup(opts)
 	end
 
 	-- global custom location-list diagnostics window toggle.

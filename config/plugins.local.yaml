@@ -9,4 +9,5 @@
 - repo: theHamsta/nvim-dap-virtual-text
 - repo: nvim-telescope/telescope-dap.nvim
 - repo: simrat39/rust-tools.nvim
-  depends: [ nvim-dap, nvim-lspconfig ]
+- repo: nvim-treesitter/nvim-treesitter-context
+  depends: nvim-treesitter
